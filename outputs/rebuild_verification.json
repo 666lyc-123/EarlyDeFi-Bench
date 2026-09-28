@@ -1,0 +1,25 @@
+{
+  "released_rows": 71808,
+  "rebuilt_rows": 71808,
+  "samples": 1056,
+  "feature_names_rebuilt": 68,
+  "rows_missing_from_rebuild": 0,
+  "rows_extra_in_rebuild": 0,
+  "value_mismatches_above_1e-6": 0,
+  "observed_at_mismatches": 0,
+  "metadata_value_cross_check": {
+    "max_abs_diff": 2.7750068909426773e-10,
+    "tolerance": 1e-06,
+    "pass": true
+  },
+  "cutoff_violations_max_feature_observed_after_prediction": 0,
+  "exact_match": true,
+  "inputs": {
+    "samples": "data/processed/pilot_samples_200_200_full_matched_stratified_temporal.parquet",
+    "candidates": "data/processed/benchmark_candidates_200_200_full.parquet",
+    "metadata_cache": "data/caches/metadata_features_200_200_full.parquet",
+    "rpc_cache": "data/caches/rpc_event_count_features_200_200_full_24h_cached.parquet",
+    "graph_cache": "data/caches/pool_participant_graph_features_200_200_full.parquet",
+    "released": "data/processed/pilot_features_200_200_full_matched_rpc_events_participant_graph.parquet"
+  }
+}

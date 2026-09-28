@@ -1,0 +1,25 @@
+{
+  "feature_cutoff": {
+    "n_samples": 1056,
+    "n_feature_rows": 71808,
+    "n_feature_names": 68,
+    "row_violations": 0,
+    "sample_violations": 0,
+    "min_margin_seconds": 0.0,
+    "median_margin_seconds": 0.0,
+    "samples_with_zero_margin": 1056,
+    "pass": true
+  },
+  "pre_event": {
+    "n_positive_samples": 256,
+    "positive_warning_not_strictly_before_event": 0,
+    "n_samples_before_pool_creation": 0,
+    "pass": true
+  },
+  "trace": {
+    "skipped": true,
+    "reason": "D:\\\u4e0b\u8f7d\\EarlyDeFi-Bench-REVIEWER-MINIMAL\\outputs\\case_study_trace.csv not present",
+    "pass": true
+  },
+  "overall_pass": true
+}
