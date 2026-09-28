@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "earlydefi-bench"
 version = "0.1.0"
-description = "Leakage-free benchmark for DeFi rug pull and flash-loan early warning."
+description = "Code and processed data for DeFi token-pool rug-pull evaluation."
 requires-python = ">=3.10"
 
 [tool.setuptools.packages.find]

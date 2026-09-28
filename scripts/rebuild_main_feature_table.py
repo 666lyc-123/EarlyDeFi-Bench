@@ -10,10 +10,10 @@ outputs are published as parquet caches under ``data/caches/``:
 - ``pool_participant_graph_features_200_200_full.parquet`` — participant-graph
   features per sample (1h/6h/24h windows).
 
-This script proves the released package is self-contained: the released main
-feature table ``data/processed/pilot_features_200_200_full_matched_rpc_events_participant_graph.parquet``
-is exactly the union of the three published caches, with no RPC access
-required. It additionally re-derives the metadata feature values from the
+This script checks whether the released main feature table
+``data/processed/pilot_features_200_200_full_matched_rpc_events_participant_graph.parquet``
+matches the union of the three published caches, with no RPC access required.
+It additionally re-derives the metadata feature values from the
 released sample and benchmark-candidate tables as an independent cross-check.
 
 The script exits non-zero if the rebuilt table does not match the released

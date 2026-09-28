@@ -1,8 +1,8 @@
 {
-  "package": "EarlyDeFi-Bench-REVIEWER-MINIMAL-20260928",
-  "generated_utc": "2026-09-28T13:42:52.522445+00:00",
+  "package": "EarlyDeFi-Bench",
+  "generated_utc": "2026-09-28T13:59:26.682998+00:00",
   "file_count": 68,
-  "total_bytes": 1675288,
+  "total_bytes": 1674922,
   "files": [
     {
       "path": ".gitattributes",
@@ -66,8 +66,8 @@
     },
     {
       "path": "DATA_AND_RIGHTS.md",
-      "bytes": 981,
-      "sha256": "2cfe1c0e881637b5765b86ebafeab3963eceada4b4329369c82b48afd54bb2f0"
+      "bytes": 900,
+      "sha256": "242ea271c59157af861610b64a6ad701c6d338c7a1c766a9c005bee4278dc872"
     },
     {
       "path": "LICENSE",
@@ -131,23 +131,23 @@
     },
     {
       "path": "outputs/temporal_cutoff_verification.json",
-      "bytes": 660,
-      "sha256": "30c0275179f8708d2971de41286a92e6815f6cb45c3cf443046eebcfb87b5cf0"
+      "bytes": 608,
+      "sha256": "2fe1014bf0e03cfb2a6cf5a151b5b78692f9cc7578e22141d2cb32dc695659fb"
     },
     {
       "path": "outputs/temporal_cutoff_verification.md",
-      "bytes": 1030,
-      "sha256": "feb78e2e852f7f97ee99f98376bf667cdb1522be7595945c54a242ace21d30e1"
+      "bytes": 992,
+      "sha256": "d7be66815e0811293923e0a196870cd6e225925cc13561c289c2c9677daab252"
     },
     {
       "path": "pyproject.toml",
-      "bytes": 372,
-      "sha256": "2c9148ad832872a590ba25076299cc18d9bf2bed223c3b2714ba50105957e275"
+      "bytes": 366,
+      "sha256": "88c649643498d2b5cdc52452338000052448f6108ebb16f4597574515b027ef1"
     },
     {
       "path": "README.md",
-      "bytes": 4167,
-      "sha256": "eee9df1114c71b7e077c7d539de24357f50e2da4e8674b6a3aecf899435da29e"
+      "bytes": 4139,
+      "sha256": "5d704aef1bd14d972d567698eba04a0cf56eb8ec8cc5623449210c0b6646dffb"
     },
     {
       "path": "requirements.txt",
@@ -166,8 +166,8 @@
     },
     {
       "path": "scripts/build_manifest.py",
-      "bytes": 1780,
-      "sha256": "6f9102912c9de7b02aa6bbf0c6e7138f0ece8894934d924f9b883e53e46e96ef"
+      "bytes": 1758,
+      "sha256": "52851abdfa8406ed476ef29c6b26d7c4898c7d81979af660135e52991136dfb9"
     },
     {
       "path": "scripts/check_leakage.py",
@@ -191,8 +191,8 @@
     },
     {
       "path": "scripts/rebuild_main_feature_table.py",
-      "bytes": 8605,
-      "sha256": "30bf659102c919ad90c124104e94e4757c936e34ec474b7812a1949dd673eafd"
+      "bytes": 8570,
+      "sha256": "ca426560a964bc8bff187ca32bc9754b65a8bdbf4cd25b9363f257f159b1f18b"
     },
     {
       "path": "scripts/run_baselines_for_dataset.py",
@@ -216,8 +216,8 @@
     },
     {
       "path": "scripts/verify_temporal_cutoff.py",
-      "bytes": 9753,
-      "sha256": "31bf3a56b4f7db32f3f35d59eb5e9797f5080602bc2ec7582e0353db737d075d"
+      "bytes": 9649,
+      "sha256": "58b87fecd8487a93b98e7a601637fc2e9ad204c8aadb7743e4633c377dfef593"
     },
     {
       "path": "src/earlydefi/__init__.py",

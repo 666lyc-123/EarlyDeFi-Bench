@@ -21,7 +21,7 @@ EXCLUDED_DIRS = {".git", "__pycache__", ".pytest_cache"}
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--package", default="EarlyDeFi-Bench-GitHub-Ready-20260925")
+    parser.add_argument("--package", default="EarlyDeFi-Bench")
     parser.add_argument("--output", default="MANIFEST.json")
     return parser.parse_args()
 

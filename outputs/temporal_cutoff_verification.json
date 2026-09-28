@@ -18,7 +18,7 @@
   },
   "trace": {
     "skipped": true,
-    "reason": "D:\\\u4e0b\u8f7d\\EarlyDeFi-Bench-REVIEWER-MINIMAL\\outputs\\case_study_trace.csv not present",
+    "reason": "outputs/case_study_trace.csv not included",
     "pass": true
   },
   "overall_pass": true

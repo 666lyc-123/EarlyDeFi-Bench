@@ -1,8 +1,8 @@
 """Temporal cutoff audit: verify max_included_time <= prediction_time.
 
-This script closes the review request on temporal leakage with the workshop's
-own released feature and trace files. For every one of the 1,056 main warning
-samples it checks, with zero tolerance:
+This script checks the recorded feature and trace timestamps against the
+declared prediction times. For every one of the 1,056 main warning samples
+it checks, with zero tolerance:
 
 1. Feature-cutoff check: the maximum ``feature_observed_at`` over all 68
    features of a sample (i.e. the latest timestamp any included feature row
@@ -17,11 +17,11 @@ samples it checks, with zero tolerance:
    ``max_evidence_observed_at_utc`` values; all of them must satisfy the
    cutoff against ``prediction_time_utc``.
 
-Boundary note (kept explicit on purpose): historical RPC and
+Boundary note: historical RPC and
 participant-graph collection indexed windows by *estimated prediction
 blocks*. ``feature_observed_at`` is therefore the declared cutoff recorded at
 collection time, and this audit verifies that declared cutoff against
-``prediction_time`` — the same boundary the paper states. It does not claim
+``prediction_time``. It does not claim
 timestamp-level visibility of individual logs inside the window.
 
 Outputs are archived to ``outputs/temporal_cutoff_verification.json`` and
@@ -120,7 +120,7 @@ def pre_event_check(samples: pd.DataFrame, candidates: pd.DataFrame) -> dict:
 
 def trace_check(trace_path: Path) -> dict:
     if not trace_path.is_file():
-        return {"skipped": True, "reason": f"{trace_path} not present", "pass": True}
+        return {"skipped": True, "reason": "outputs/case_study_trace.csv not included", "pass": True}
     trace = pd.read_csv(trace_path)
     required = {"prediction_time_utc", "max_evidence_observed_at_utc", "evidence_observed_no_later_than_prediction"}
     missing = required - set(trace.columns)
@@ -151,7 +151,7 @@ def write_md(path: Path, report: dict) -> None:
         "Boundary note: historical RPC and participant-graph windows were indexed",
         "by estimated prediction blocks. `feature_observed_at` is the declared",
         "cutoff recorded at collection time; this audit verifies that declared",
-        "cutoff against `prediction_time`, matching the paper's stated boundary.",
+        "cutoff against `prediction_time`.",
         "It does not claim timestamp-level visibility of individual logs.",
         "",
         "## Feature cutoff (main table)",

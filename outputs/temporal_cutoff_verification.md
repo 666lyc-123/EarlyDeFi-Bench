@@ -6,7 +6,7 @@ contract `max_included_time <= prediction_time` (zero tolerance).
 Boundary note: historical RPC and participant-graph windows were indexed
 by estimated prediction blocks. `feature_observed_at` is the declared
 cutoff recorded at collection time; this audit verifies that declared
-cutoff against `prediction_time`, matching the paper's stated boundary.
+cutoff against `prediction_time`.
 It does not claim timestamp-level visibility of individual logs.
 
 ## Feature cutoff (main table)
